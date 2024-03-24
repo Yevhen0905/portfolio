@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-size: 16;
+  line-height: 1.4;
+  font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hero {
+  position: relative;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
