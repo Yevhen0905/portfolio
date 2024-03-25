@@ -27,7 +27,7 @@
           <li class="list_social_item">
             <a
               class="list_social_link"
-              href="ttps://github.com/Yevhen0905"
+              href="https://github.com/Yevhen0905"
               target="_blank"
               ><i class="icon fa-brands fa-github"></i
             ></a>
@@ -35,11 +35,78 @@
         </ul>
       </div>
       <div class="home_btn">
-        <a href="" class="link_btn red">View Project</a
-        ><a href="https://yevhen0905.github.io/RESUME/" class="link_btn red">Open CV</a>
+        <a href="#project" class="link_btn red">View Project</a
+        ><a
+          href="https://yevhen0905.github.io/RESUME/"
+          class="link_btn red"
+          target="_blank"
+          >Open CV</a
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script setup></script>
+
+<style lang="scss">
+  .wrapper_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 18px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 51px;
+    color: var(--base-color);
+    font-weight: 700;
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .description {
+    max-width: 704px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    color: var(--base-color);
+
+    @media only screen and (max-width: 768px) {
+      font-size: 19px;
+    }
+  }
+
+  .list_social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    &_link {
+      font-size: 40px;
+      color: blanchedalmond;
+
+      @media only screen and (max-width: 480px) {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .home_btn {
+    margin-top: 20px;
+    display: flex;
+    gap: 53px;
+
+    @media only screen and (max-width: 768px) {
+      gap: 20px;
+    }
+  }
+</style>
