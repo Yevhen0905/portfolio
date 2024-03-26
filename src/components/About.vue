@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="wrapper_home">
+    <div class="wrapper_home" ref="mainTitle">
       <div class="home_text">
         <h1 class="title">I`m Vittsenko Evgen</h1>
         <p class="description">
@@ -47,7 +47,15 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import {ref, onMounted} from 'vue';
+
+  const mainTitle = ref(null);
+
+  onMounted(() =>
+    window.addEventListener('load', () => mainTitle.value.classList.add('loaded'))
+  );
+</script>
 
 <style lang="scss">
   .wrapper_home {
@@ -108,5 +116,38 @@
     @media only screen and (max-width: 768px) {
       gap: 20px;
     }
+  }
+
+  .title,
+  .description,
+  .home_icon,
+  .home_btn {
+    transform: translate(0px, 3.125rem);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .loaded .title {
+    transition-delay: 0.5s;
+  }
+
+  .loaded .description {
+    transition-delay: 0.7s;
+  }
+
+  .loaded .home_icon {
+    transition-delay: 0.9s;
+  }
+
+  .loaded .home_btn {
+    transition-delay: 1.1s;
+  }
+
+  .loaded .title,
+  .loaded .description,
+  .loaded .home_icon,
+  .loaded .home_btn {
+    transform: translate(0px, 0);
+    opacity: 1;
   }
 </style>

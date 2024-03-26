@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <div class="wrapper_skills">
-      <div class="title_small">Skills</div>
+      <div data-item class="title_small">Skills</div>
       <div class="skills_content">
-        <div class="description_small description_skills">
+        <div data-item class="description_small description_skills">
           I am constantly improving my skills to create well-functioning websites and
           applications
         </div>
-        <div class="skills_list_wrapper">
+        <div data-item class="skills_list_wrapper">
           <div class="skills_list" v-for="skill in listSkills" :key="skill">
             {{ skill }}
           </div>
@@ -18,7 +18,8 @@
 </template>
 
 <script setup>
-  import {ref} from 'vue';
+  import {ref, onMounted} from 'vue';
+  import {initIntersectionObserver} from '../composables/observe.js';
 
   const listSkills = ref([
     'HTML',
@@ -26,13 +27,15 @@
     'SCSS',
     'JavaScript',
     'VUE',
-    'NUXT',
-    'Pinia',
+    'Vuex | Pinia',
     'Vue-router',
-    'Git/Gitlab',
+    'NUXT',
+    'Git | GitHub | Gitlab',
     'Figma',
     'Trello'
   ]);
+
+  onMounted(() => initIntersectionObserver('0.3', 'active'));
 </script>
 
 <style lang="scss">

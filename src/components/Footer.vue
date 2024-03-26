@@ -1,7 +1,7 @@
 <template>
   <div class="footer_content">
     <h3 class="footer_title">Vittsenko Evgen</h3>
-    <div class="home_icon">
+    <div class="home_icon footer_icon">
       <ul class="list_social">
         <li class="list_social_item">
           <a
@@ -38,6 +38,11 @@
 <style lang="scss">
   .footer_content {
     padding: 30px 0;
+  }
+
+  .home_icon.footer_icon {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 
   .footer_title {

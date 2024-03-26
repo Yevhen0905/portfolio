@@ -2,7 +2,7 @@
   <div class="wrapper_project">
     <div class="title_small">Projects</div>
     <div class="project_content">
-      <div class="project_content_item">
+      <div data-item class="project_content_item">
         <div class="project_content_item_img">
           <img src="../assets/img/website.png" alt="website" />
         </div>
@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-      <div class="project_content_item">
+      <div data-item class="project_content_item">
         <div class="project_content_item_img">
           <img src="../assets/img/marvel.png" alt="website" />
         </div>
@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <div class="project_content_item">
+      <div data-item class="project_content_item">
         <div class="project_content_item_img">
           <img src="../assets/img/list.png" alt="weather" />
         </div>
@@ -99,7 +99,7 @@
         </div>
       </div>
 
-      <div class="project_content_item">
+      <div data-item class="project_content_item">
         <div class="project_content_item_img">
           <img src="../assets/img/weather.png" alt="weather" />
         </div>
@@ -132,7 +132,7 @@
         </div>
       </div>
 
-      <div class="project_content_item">
+      <div data-item class="project_content_item">
         <div class="project_content_item_img">
           <img src="../assets/img/todo.png" alt="weather" />
         </div>
@@ -165,7 +165,8 @@
 </template>
 
 <script setup>
-  import {ref} from 'vue';
+  import {ref, onMounted} from 'vue';
+  import {initIntersectionObserver} from '../composables/observe.js';
 
   const listToolsForWebsite = ref(['HTML', 'SCSS', 'JavaScript']);
   const listToolsForMarvel = ref([
@@ -180,6 +181,8 @@
   const listToolsForWeather = ref(['HTML', 'SCSS', 'Nuxt', 'Swiper', 'Fetch API']);
   const listToolsForTodo = ref(['HTML', 'SCSS', 'Vue', 'Vue-router', 'Vuex']);
   const listToolsForList = ref(['HTML', 'SCSS', 'Vue', 'Vue-router']);
+
+  onMounted(() => initIntersectionObserver('0.3', 'active'));
 </script>
 
 <style lang="scss">
