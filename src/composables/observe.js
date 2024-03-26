@@ -1,6 +1,5 @@
 export const initIntersectionObserver = (time, selector) => {
   const items = document.querySelectorAll('[data-item]');
-  console.log(items);
   const options = {
     threshold: time
   };
