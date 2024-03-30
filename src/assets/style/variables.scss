@@ -1,8 +1,9 @@
 :root {
   --base-color: #ffffff;
-  --color-hover-text: rgb(23, 23, 23);
-  --color-grey: rgb(130, 129, 129);
-  --color-red: rgb(158, 39, 41);
+  --color-hover-text: rgb(0, 0, 0);
+  --color-grey: rgb(73 71 71);
+  --color-red: rgb(221 78 81);
+  --bg-section: linear-gradient(#0f2e6e 100%, #fff), linear-gradient(#114266, #fff);
 
   --header-height: 68px;
   --footer-height: 57px;

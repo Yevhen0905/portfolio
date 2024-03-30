@@ -1,35 +1,37 @@
 <template>
-  <div class="footer_content">
-    <h3 class="footer_title">Vittsenko Evgen</h3>
-    <div class="home_icon footer_icon">
-      <ul class="list_social">
-        <li class="list_social_item">
-          <a
-            class="list_social_link footer_social"
-            href="https://t.me/EvgenVittsenko"
-            target="_blank"
-            ><i class="icon fa-brands fa-telegram"></i
-          ></a>
-        </li>
-        <li class="list_social_item">
-          <a
-            class="list_social_link footer_social"
-            href="https://www.linkedin.com/in/evgen-vittsenko-739529250/"
-            target="_blank"
-            ><i class="icon fa fa-linkedin" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li class="list_social_item">
-          <a
-            class="list_social_link footer_social"
-            href="https://github.com/Yevhen0905"
-            target="_blank"
-            ><i class="icon fa-brands fa-github"></i
-          ></a>
-        </li>
-      </ul>
+  <div class="container">
+    <div class="footer_content">
+      <h3 class="footer_title">Vittsenko Evgen</h3>
+      <div class="home_icon footer_icon">
+        <ul class="list_social">
+          <li class="list_social_item">
+            <a
+              class="list_social_link footer_social"
+              href="https://t.me/EvgenVittsenko"
+              target="_blank"
+              ><i class="icon fa-brands fa-telegram"></i
+            ></a>
+          </li>
+          <li class="list_social_item">
+            <a
+              class="list_social_link footer_social"
+              href="https://www.linkedin.com/in/evgen-vittsenko-739529250/"
+              target="_blank"
+              ><i class="icon fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="list_social_item">
+            <a
+              class="list_social_link footer_social"
+              href="https://github.com/Yevhen0905"
+              target="_blank"
+              ><i class="icon fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer_years">2024</p>
     </div>
-    <p class="footer_years">All rights reserved @ 2024</p>
   </div>
 </template>
 
@@ -54,6 +56,11 @@
 
   .list_social_link.footer_social {
     color: var(--color-hover-text);
+    transition: var(--transition);
+
+    &:hover {
+      color: rgb(238 121 121);
+    }
   }
   .footer_years {
     color: var(--color-hover-text);

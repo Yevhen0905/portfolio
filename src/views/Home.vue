@@ -1,25 +1,8 @@
 <template>
   <div class="hero">
-    <header class="header" id="header">
-      <div class="container">
-        <nav class="nav">
-          <ul class="list">
-            <li class="list_item">
-              <a class="list_item_link" href="#home">Home</a>
-            </li>
-            <li class="list_item">
-              <a class="list_item_link" href="#skills">Skills</a>
-            </li>
-            <li class="list_item">
-              <a class="list_item_link" href="#project">Project</a>
-            </li>
-            <li class="list_item">
-              <a class="list_item_link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="header" id="header">
+      <Header />
+    </div>
     <main class="main">
       <section class="section_home" id="home">
         <About />
@@ -28,16 +11,12 @@
         <Skills />
       </section>
       <section class="section_project" id="project">
-        <div class="container">
-          <Projects />
-        </div>
+        <Projects />
       </section>
     </main>
-    <footer class="footer" id="contacts">
-      <div class="container">
-        <Footer />
-      </div>
-    </footer>
+    <div class="footer" id="contacts">
+      <Footer />
+    </div>
     <BackTop v-show="visibleBackTop" @click="goToTop" />
   </div>
 </template>
@@ -45,6 +24,7 @@
 <script setup>
   import About from '../components/About.vue';
   import Skills from '../components/Skills.vue';
+  import Header from '../components/Header.vue';
   import Footer from '../components/Footer.vue';
   import BackTop from '../components/BackTop.vue';
   import Projects from '../components/Projects.vue';
@@ -104,7 +84,7 @@
 
   .section_home {
     height: calc(100vh - var(--header-height));
-    background-color: rgb(4, 10, 55);
+    background: var(--bg-section);
     min-height: 415px;
   }
 
@@ -118,14 +98,5 @@
     @media only screen and (max-width: 768px) {
       padding: 4px 12px;
     }
-  }
-
-  .red {
-    background-color: var(--color-red);
-    color: var(--base-color);
-  }
-
-  .section_project {
-    background-color: rgb(4, 10, 55);
   }
 </style>

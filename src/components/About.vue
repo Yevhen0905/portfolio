@@ -99,11 +99,16 @@
     gap: 25px;
 
     &_link {
-      font-size: 40px;
-      color: blanchedalmond;
+      font-size: 45px;
+      color: #e9c793;
+      transition: var(--transition);
 
       @media only screen and (max-width: 480px) {
         font-size: 35px;
+      }
+
+      &:hover {
+        color: #a38250;
       }
     }
   }

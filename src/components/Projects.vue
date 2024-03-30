@@ -1,162 +1,165 @@
 <template>
-  <div class="wrapper_project">
-    <div class="title_small">Projects</div>
-    <div class="project_content">
-      <div data-item class="project_content_item">
-        <div class="project_content_item_img">
-          <img src="../assets/img/website.png" alt="website" />
+  <div class="container">
+    <div class="wrapper_project">
+      <div class="title_small">Projects</div>
+      <div class="project_content">
+        <div data-item class="project_content_item">
+          <div class="project_content_item_img">
+            <img src="../assets/img/website.png" alt="website" />
+          </div>
+
+          <div class="project_content_item_description">
+            <h3 class="title_project">Responsive website</h3>
+            <p class="description_project">
+              The fully responsive website uses the best coding practices and looks
+              equally good on devices of different sizes. It also incorporates element
+              animations
+            </p>
+            <div class="wrapper_list_tools">
+              <div class="list_tools" v-for="skill in listToolsForWebsite" :key="skill">
+                {{ skill }}
+              </div>
+            </div>
+            <div class="wrapper_btn_project">
+              <a
+                class="link_btn red"
+                href="https://yevhen0905.github.io/responsive_website/"
+                target="_blank"
+                >Visit site</a
+              >
+              <a
+                class="link_btn grey"
+                href="https://github.com/Yevhen0905/website"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div data-item class="project_content_item">
+          <div class="project_content_item_img">
+            <img src="../assets/img/marvel.png" alt="website" />
+          </div>
+          <div class="project_content_item_description">
+            <h3 class="title_project">Marvel product</h3>
+            <p class="description_project">
+              The web application utilizes the Marvel API, providing users with access to
+              comprehensive information about comics and characters
+            </p>
+            <div class="wrapper_list_tools">
+              <div class="list_tools" v-for="skill in listToolsForMarvel" :key="skill">
+                {{ skill }}
+              </div>
+            </div>
+            <div class="wrapper_btn_project">
+              <a
+                class="link_btn red"
+                href="https://yevhen0905.github.io/marvel_product/"
+                target="_blank"
+                >Visit site</a
+              >
+              <a
+                class="link_btn grey"
+                href="https://github.com/Yevhen0905/marvel_product"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
         </div>
 
-        <div class="project_content_item_description">
-          <h3 class="title_project">Responsive website</h3>
-          <p class="description_project">
-            The fully responsive website uses the best coding practices and looks equally
-            good on devices of different sizes. It also incorporates element animations
-          </p>
-          <div class="wrapper_list_tools">
-            <div class="list_tools" v-for="skill in listToolsForWebsite" :key="skill">
-              {{ skill }}
+        <div data-item class="project_content_item">
+          <div class="project_content_item_img">
+            <img src="../assets/img/list.png" alt="weather" />
+          </div>
+          <div class="project_content_item_description">
+            <h3 class="title_project">List</h3>
+            <p class="description_project">
+              The list is retrieved using the Fetch API. It includes sorting, filtering,
+              and searching by name, as well as animated elements. Additionally, Vue
+              Router is utilized to save all actions in the page URL
+            </p>
+            <div class="wrapper_list_tools">
+              <div class="list_tools" v-for="skill in listToolsForList" :key="skill">
+                {{ skill }}
+              </div>
+            </div>
+            <div class="wrapper_btn_project">
+              <a
+                class="link_btn red"
+                href="https://yevhen0905.github.io/list_processing/"
+                target="_blank"
+                >Visit site</a
+              >
+              <a
+                class="link_btn grey"
+                href="https://github.com/Yevhen0905/list_processing"
+                target="_blank"
+                >Github</a
+              >
             </div>
           </div>
-          <div class="wrapper_btn_project">
-            <a
-              class="link_btn red"
-              href="https://yevhen0905.github.io/responsive_website/"
-              target="_blank"
-              >Visit site</a
-            >
-            <a
-              class="link_btn grey"
-              href="https://github.com/Yevhen0905/website"
-              target="_blank"
-              >Github</a
-            >
-          </div>
         </div>
-      </div>
-      <div data-item class="project_content_item">
-        <div class="project_content_item_img">
-          <img src="../assets/img/marvel.png" alt="website" />
-        </div>
-        <div class="project_content_item_description">
-          <h3 class="title_project">Marvel product</h3>
-          <p class="description_project">
-            The web application utilizes the Marvel API, providing users with access to
-            comprehensive information about comics and characters
-          </p>
-          <div class="wrapper_list_tools">
-            <div class="list_tools" v-for="skill in listToolsForMarvel" :key="skill">
-              {{ skill }}
-            </div>
-          </div>
-          <div class="wrapper_btn_project">
-            <a
-              class="link_btn red"
-              href="https://yevhen0905.github.io/marvel_product/"
-              target="_blank"
-              >Visit site</a
-            >
-            <a
-              class="link_btn grey"
-              href="https://github.com/Yevhen0905/marvel_product"
-              target="_blank"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
 
-      <div data-item class="project_content_item">
-        <div class="project_content_item_img">
-          <img src="../assets/img/list.png" alt="weather" />
-        </div>
-        <div class="project_content_item_description">
-          <h3 class="title_project">List</h3>
-          <p class="description_project">
-            The list is retrieved using the Fetch API. It includes sorting, filtering, and
-            searching by name, as well as animated elements. Additionally, Vue Router is
-            utilized to save all actions in the page URL
-          </p>
-          <div class="wrapper_list_tools">
-            <div class="list_tools" v-for="skill in listToolsForList" :key="skill">
-              {{ skill }}
+        <div data-item class="project_content_item">
+          <div class="project_content_item_img">
+            <img src="../assets/img/weather.png" alt="weather" />
+          </div>
+          <div class="project_content_item_description">
+            <h3 class="title_project">Weather forecast</h3>
+            <p class="description_project">
+              Developed with the weather API, this application displays detailed weather
+              forecasts for the current day and provides a more generalized overview for
+              the next five days
+            </p>
+            <div class="wrapper_list_tools">
+              <div class="list_tools" v-for="skill in listToolsForWeather" :key="skill">
+                {{ skill }}
+              </div>
+            </div>
+            <div class="wrapper_btn_project">
+              <a
+                class="link_btn red"
+                href="https://yevhen0905.github.io/Weather_nuxt/"
+                target="_blank"
+                >Visit site</a
+              >
+              <a
+                class="link_btn grey"
+                href="https://github.com/Yevhen0905/Weather_nuxt"
+                target="_blank"
+                >Github</a
+              >
             </div>
           </div>
-          <div class="wrapper_btn_project">
-            <a
-              class="link_btn red"
-              href="https://yevhen0905.github.io/list_processing/"
-              target="_blank"
-              >Visit site</a
-            >
-            <a
-              class="link_btn grey"
-              href="https://github.com/Yevhen0905/list_processing"
-              target="_blank"
-              >Github</a
-            >
-          </div>
         </div>
-      </div>
 
-      <div data-item class="project_content_item">
-        <div class="project_content_item_img">
-          <img src="../assets/img/weather.png" alt="weather" />
-        </div>
-        <div class="project_content_item_description">
-          <h3 class="title_project">Weather forecast</h3>
-          <p class="description_project">
-            Developed with the weather API, this application displays detailed weather
-            forecasts for the current day and provides a more generalized overview for the
-            next five days
-          </p>
-          <div class="wrapper_list_tools">
-            <div class="list_tools" v-for="skill in listToolsForWeather" :key="skill">
-              {{ skill }}
+        <div data-item class="project_content_item">
+          <div class="project_content_item_img">
+            <img src="../assets/img/todo.png" alt="weather" />
+          </div>
+          <div class="project_content_item_description">
+            <h3 class="title_project">ToDo</h3>
+            <p class="description_project">An app for to-do lists and tasks</p>
+            <div class="wrapper_list_tools">
+              <div class="list_tools" v-for="skill in listToolsForTodo" :key="skill">
+                {{ skill }}
+              </div>
             </div>
-          </div>
-          <div class="wrapper_btn_project">
-            <a
-              class="link_btn red"
-              href="https://yevhen0905.github.io/Weather_nuxt/"
-              target="_blank"
-              >Visit site</a
-            >
-            <a
-              class="link_btn grey"
-              href="https://github.com/Yevhen0905/Weather_nuxt"
-              target="_blank"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div data-item class="project_content_item">
-        <div class="project_content_item_img">
-          <img src="../assets/img/todo.png" alt="weather" />
-        </div>
-        <div class="project_content_item_description">
-          <h3 class="title_project">ToDo</h3>
-          <p class="description_project">An app for to-do lists and tasks</p>
-          <div class="wrapper_list_tools">
-            <div class="list_tools" v-for="skill in listToolsForTodo" :key="skill">
-              {{ skill }}
+            <div class="wrapper_btn_project">
+              <a
+                class="link_btn red"
+                href="https://yevhen0905.github.io/SPA_todo/"
+                target="_blank"
+                >Visit site</a
+              >
+              <a
+                class="link_btn grey"
+                href="https://github.com/Yevhen0905/SPA_todo"
+                target="_blank"
+                >Github</a
+              >
             </div>
-          </div>
-          <div class="wrapper_btn_project">
-            <a
-              class="link_btn red"
-              href="https://yevhen0905.github.io/SPA_todo/"
-              target="_blank"
-              >Visit site</a
-            >
-            <a
-              class="link_btn grey"
-              href="https://github.com/Yevhen0905/SPA_todo"
-              target="_blank"
-              >Github</a
-            >
           </div>
         </div>
       </div>
@@ -184,8 +187,12 @@
 
   onMounted(() => initIntersectionObserver('0.3', 'active'));
 </script>
-
+f
 <style lang="scss">
+  .section_project {
+    background: var(--bg-section);
+  }
+
   .wrapper_project {
     padding: 60px 0;
   }
@@ -193,6 +200,7 @@
   .project_content_item {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 20px;
     margin-bottom: 50px;
@@ -271,5 +279,10 @@
   .grey {
     color: var(--base-color);
     border: 1px solid var(--base-color);
+    transition: var(--transition);
+
+    &:hover {
+      background: #66626252;
+    }
   }
 </style>

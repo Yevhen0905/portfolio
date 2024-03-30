@@ -46,19 +46,6 @@
     justify-content: center;
   }
 
-  .title_small {
-    font-size: 30px;
-    font-weight: 600;
-    color: var(--color-red);
-    text-align: center;
-    margin-bottom: 26px;
-  }
-
-  .description_small {
-    font-size: 20px;
-    width: 905px;
-  }
-
   .skills_list_wrapper {
     display: flex;
     flex-wrap: wrap;
