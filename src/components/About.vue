@@ -71,9 +71,12 @@
 
   .title {
     font-size: 51px;
-    color: var(--base-color);
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
+    background: linear-gradient(45deg, #4158d0 0%, #c850c0 27%, #ffcc70 100%);
+    color: #0f2e6e;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 5px transparent;
 
     @media only screen and (max-width: 768px) {
       font-size: 35px;
@@ -86,7 +89,11 @@
     text-align: center;
     width: 100%;
     font-size: 24px;
+    font-weight: 500;
     color: var(--base-color);
+    background: linear-gradient(45deg, #4158d0 0%, #c850c0 27%, #ffcc70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px transparent;
 
     @media only screen and (max-width: 768px) {
       font-size: 19px;
@@ -133,19 +140,19 @@
   }
 
   .loaded .title {
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
   }
 
   .loaded .description {
-    transition-delay: 0.7s;
+    transition-delay: 0.5s;
   }
 
   .loaded .home_icon {
-    transition-delay: 0.9s;
+    transition-delay: 0.7s;
   }
 
   .loaded .home_btn {
-    transition-delay: 1.1s;
+    transition-delay: 0.9s;
   }
 
   .loaded .title,

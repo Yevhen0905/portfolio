@@ -278,11 +278,13 @@ f
   }
   .grey {
     color: var(--base-color);
+    background: transparent;
     border: 1px solid var(--base-color);
     transition: var(--transition);
+    box-shadow: -3px 1px 27px 3px rgb(9 55 91 / 69%);
 
     &:hover {
-      background: #66626252;
+      box-shadow: -3px 1px 27px 3px rgb(90 97 104 / 69%);
     }
   }
 </style>
