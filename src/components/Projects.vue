@@ -136,6 +136,37 @@
 
         <div data-item class="project_content_item">
           <div class="project_content_item_img">
+            <img src="../assets/img/phonebook.png" alt="weather" />
+          </div>
+          <div class="project_content_item_description">
+            <h3 class="title_project">Telephone directory</h3>
+            <p class="description_project">
+              Phone book for storing and managing contacts
+            </p>
+            <div class="wrapper_list_tools">
+              <div class="list_tools" v-for="skill in listToolsForPhone" :key="skill">
+                {{ skill }}
+              </div>
+            </div>
+            <div class="wrapper_btn_project">
+              <a
+                class="link_btn red"
+                href="https://yevhen0905.github.io/telephone_directory/"
+                target="_blank"
+                >Visit site</a
+              >
+              <a
+                class="link_btn grey"
+                href="https://github.com/Yevhen0905/telephone_directory"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div data-item class="project_content_item">
+          <div class="project_content_item_img">
             <img src="../assets/img/todo.png" alt="weather" />
           </div>
           <div class="project_content_item_description">
@@ -183,6 +214,7 @@
   ]);
   const listToolsForWeather = ref(['HTML', 'SCSS', 'Nuxt', 'Swiper', 'Fetch API']);
   const listToolsForTodo = ref(['HTML', 'SCSS', 'Vue', 'Vue-router', 'Vuex']);
+  const listToolsForPhone = ref(['HTML', 'SCSS', 'Vue', 'Vue-router', 'Pinia']);
   const listToolsForList = ref(['HTML', 'SCSS', 'Vue', 'Vue-router']);
 
   onMounted(() => initIntersectionObserver('0.3', 'active'));
