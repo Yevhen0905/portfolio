@@ -27,10 +27,60 @@
   background-color: rgb(143, 26, 28);
   color: var(--base-color);
   transition: var(--transition);
-  box-shadow: -3px 1px 27px 3px rgb(9 55 91 / 69%);
+  box-shadow: -3px 1px 9px 0px rgb(55 54 54 / 69%);
 
   &:hover {
     background-color: rgb(176, 30, 33);
     box-shadow: -3px 1px 27px 3px rgb(104 93 93 / 69%);
   }
+}
+
+.link_btn {
+  display: block;
+  font-size: 21px;
+  border-radius: 5px;
+  padding: 8px 20px;
+  width: fit-content;
+
+  @media only screen and (max-width: 768px) {
+    padding: 4px 12px;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  display: none;
+  z-index: 3;
+
+  @media only screen and (max-width: 700px) {
+    display: block;
+  }
+}
+
+.open .hamburger {
+  position: fixed;
+}
+
+body {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(221 78 81) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(221 78 81);
+}
+
+::-moz-scrollbar {
+  width: 12px;
+}
+
+::-moz-scrollbar-thumb {
+  background: rgb(221 78 81);
 }

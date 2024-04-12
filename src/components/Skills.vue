@@ -39,6 +39,11 @@
 </script>
 
 <style lang="scss">
+  .section_skills {
+    background: var(--bg-light);
+    transition: all 0.3s ease;
+  }
+
   .wrapper_skills {
     padding: 60px 0;
     display: flex;
@@ -65,6 +70,8 @@
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
+    color: var(--font-color);
+    transition: all 0.3s ease;
   }
 
   .skills_list {

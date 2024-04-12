@@ -12,7 +12,7 @@
     bottom: 15px;
     right: 15px;
     font-size: 20px;
-    color: rgb(98 87 87);
+    color: var(--font-color);
     transition: all 0.5 ease;
   }
 

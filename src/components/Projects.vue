@@ -222,7 +222,8 @@
 f
 <style lang="scss">
   .section_project {
-    background: var(--bg-section);
+    background: var(--bg-color-primary);
+    transition: all 0.3s ease;
   }
 
   .wrapper_project {
@@ -255,6 +256,7 @@ f
   }
 
   .project_content_item_img {
+    position: relative;
     width: 60%;
 
     @media only screen and (max-width: 1050px) {
@@ -263,6 +265,17 @@ f
 
     img {
       width: 100%;
+      border-radius: 8px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 2px;
+      right: 0;
+      background: var(--bg-image);
       border-radius: 8px;
     }
   }
@@ -280,12 +293,13 @@ f
 
   .list_tools {
     font-size: 19px;
-    color: var(--base-color);
+    color: var(--bg-color-primary);
     background: #323885;
     width: fit-content;
     border-radius: 5px;
     padding: 5px;
-    background: #7c7676;
+    background: var(--color-accent);
+    transition: all 0.3s ease;
 
     @media only screen and (max-width: 768px) {
       padding: 4px;
@@ -313,7 +327,7 @@ f
     background: transparent;
     border: 1px solid var(--base-color);
     transition: var(--transition);
-    box-shadow: -3px 1px 27px 3px rgb(9 55 91 / 69%);
+    box-shadow: -3px 1px 27px 3px rgb(68 68 68 / 69%);
 
     &:hover {
       box-shadow: -3px 1px 27px 3px rgb(90 97 104 / 69%);

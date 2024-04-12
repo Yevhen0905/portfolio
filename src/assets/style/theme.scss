@@ -1,0 +1,17 @@
+.theme_light {
+  --bg-color-primary: linear-gradient(#0f2e6e 100%, #fff), linear-gradient(#114266, #fff);
+  --bg-light: #fff;
+  --color-accent: #7c7676;
+  --font-color: #000000;
+  --color-bg-switch: #dedada;
+  --color-switch: #fff;
+}
+
+.theme_dark {
+  --bg-color-primary: #252525;
+  --bg-light: #353535;
+  --color-accent: rgb(199, 194, 194);
+  --font-color: #ffffff;
+  --color-bg-switch: #676565;
+  --bg-image: rgb(0 0 0 / 10%);
+}
