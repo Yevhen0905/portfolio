@@ -140,19 +140,19 @@
   }
 
   .loaded .title {
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
   }
 
   .loaded .description {
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
   }
 
   .loaded .home_icon {
-    transition-delay: 0.7s;
+    transition-delay: 0.5s;
   }
 
   .loaded .home_btn {
-    transition-delay: 0.9s;
+    transition-delay: 0.7s;
   }
 
   .loaded .title,

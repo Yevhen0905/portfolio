@@ -1,5 +1,5 @@
 <template>
-  <div class="header" :class="['wrapper', {open: isActive}]" id="header">
+  <div class="header" :class="{open: isActive}" id="header">
     <div class="container">
       <div class="wrapper_header">
         <div class="wrapper_header_icon">
@@ -182,6 +182,11 @@
         color: var(--color-hover-text);
       }
     }
+  }
+
+  .header.open {
+    position: relative;
+    z-index: auto;
   }
 
   .open .list {

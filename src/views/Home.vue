@@ -32,7 +32,7 @@
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    visibleBackTop.value = scrollTop > 300;
+    visibleBackTop.value = scrollTop > 180;
   };
 
   const goToTop = () => {

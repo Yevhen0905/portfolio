@@ -293,7 +293,7 @@ f
 
   .list_tools {
     font-size: 19px;
-    color: var(--bg-color-primary);
+    color: var(--bg-light);
     background: #323885;
     width: fit-content;
     border-radius: 5px;
