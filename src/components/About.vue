@@ -4,15 +4,18 @@
       <div class="home_text">
         <h1 class="title">I`m Vittsenko Evgen</h1>
         <p class="description">
-          I am a front-end developer with nearly 1 year of commercial experience. I
-          specialize in creating website and web application interfaces, with a primary
-          focus on delivering maximum business value.
+          I am a front-end developer with nearly 1 year of commercial
+          experience. I specialize in creating website and web application
+          interfaces, with a primary focus on delivering maximum business value.
         </p>
       </div>
       <div class="home_icon">
         <ul class="list_social">
           <li class="list_social_item">
-            <a class="list_social_link" href="https://t.me/EvgenVittsenko" target="_blank"
+            <a
+              class="list_social_link"
+              href="https://t.me/EvgenVittsenko"
+              target="_blank"
               ><i class="icon fa-brands fa-telegram"></i
             ></a>
           </li>
@@ -53,12 +56,15 @@
   const mainTitle = ref(null);
 
   onMounted(() =>
-    window.addEventListener('load', () => mainTitle.value.classList.add('loaded'))
+    window.addEventListener('load', () =>
+      mainTitle.value.classList.add('loaded')
+    )
   );
 </script>
 
 <style lang="scss">
   .wrapper_home {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

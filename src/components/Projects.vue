@@ -11,12 +11,16 @@
           <div class="project_content_item_description">
             <h3 class="title_project">Responsive website</h3>
             <p class="description_project">
-              The fully responsive website uses the best coding practices and looks
-              equally good on devices of different sizes. It also incorporates element
-              animations
+              The fully responsive website uses the best coding practices and
+              looks equally good on devices of different sizes. It also
+              incorporates element animations
             </p>
             <div class="wrapper_list_tools">
-              <div class="list_tools" v-for="skill in listToolsForWebsite" :key="skill">
+              <div
+                class="list_tools"
+                v-for="skill in listToolsForWebsite"
+                :key="skill"
+              >
                 {{ skill }}
               </div>
             </div>
@@ -43,11 +47,15 @@
           <div class="project_content_item_description">
             <h3 class="title_project">Marvel product</h3>
             <p class="description_project">
-              The web application utilizes the Marvel API, providing users with access to
-              comprehensive information about comics and characters
+              The web application utilizes the Marvel API, providing users with
+              access to comprehensive information about comics and characters
             </p>
             <div class="wrapper_list_tools">
-              <div class="list_tools" v-for="skill in listToolsForMarvel" :key="skill">
+              <div
+                class="list_tools"
+                v-for="skill in listToolsForMarvel"
+                :key="skill"
+              >
                 {{ skill }}
               </div>
             </div>
@@ -75,12 +83,17 @@
           <div class="project_content_item_description">
             <h3 class="title_project">List</h3>
             <p class="description_project">
-              The list is retrieved using the Fetch API. It includes sorting, filtering,
-              and searching by name, as well as animated elements. Additionally, Vue
-              Router is utilized to save all actions in the page URL
+              The list is retrieved using the Fetch API. It includes sorting,
+              filtering, and searching by name, as well as animated elements.
+              Additionally, Vue Router is utilized to save all actions in the
+              page URL
             </p>
             <div class="wrapper_list_tools">
-              <div class="list_tools" v-for="skill in listToolsForList" :key="skill">
+              <div
+                class="list_tools"
+                v-for="skill in listToolsForList"
+                :key="skill"
+              >
                 {{ skill }}
               </div>
             </div>
@@ -108,12 +121,16 @@
           <div class="project_content_item_description">
             <h3 class="title_project">Weather forecast</h3>
             <p class="description_project">
-              Developed with the weather API, this application displays detailed weather
-              forecasts for the current day and provides a more generalized overview for
-              the next five days
+              Developed with the weather API, this application displays detailed
+              weather forecasts for the current day and provides a more
+              generalized overview for the next five days
             </p>
             <div class="wrapper_list_tools">
-              <div class="list_tools" v-for="skill in listToolsForWeather" :key="skill">
+              <div
+                class="list_tools"
+                v-for="skill in listToolsForWeather"
+                :key="skill"
+              >
                 {{ skill }}
               </div>
             </div>
@@ -144,7 +161,11 @@
               Phone book for storing and managing contacts
             </p>
             <div class="wrapper_list_tools">
-              <div class="list_tools" v-for="skill in listToolsForPhone" :key="skill">
+              <div
+                class="list_tools"
+                v-for="skill in listToolsForPhone"
+                :key="skill"
+              >
                 {{ skill }}
               </div>
             </div>
@@ -173,7 +194,11 @@
             <h3 class="title_project">ToDo</h3>
             <p class="description_project">An app for to-do lists and tasks</p>
             <div class="wrapper_list_tools">
-              <div class="list_tools" v-for="skill in listToolsForTodo" :key="skill">
+              <div
+                class="list_tools"
+                v-for="skill in listToolsForTodo"
+                :key="skill"
+              >
                 {{ skill }}
               </div>
             </div>
@@ -212,7 +237,13 @@
     'Rest API',
     'Axios'
   ]);
-  const listToolsForWeather = ref(['HTML', 'SCSS', 'Nuxt', 'Swiper', 'Fetch API']);
+  const listToolsForWeather = ref([
+    'HTML',
+    'SCSS',
+    'Nuxt',
+    'Swiper',
+    'Fetch API'
+  ]);
   const listToolsForTodo = ref(['HTML', 'SCSS', 'Vue', 'Vue-router', 'Vuex']);
   const listToolsForPhone = ref(['HTML', 'SCSS', 'Vue', 'Vue-router', 'Pinia']);
   const listToolsForList = ref(['HTML', 'SCSS', 'Vue', 'Vue-router']);
