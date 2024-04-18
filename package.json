@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "css-doodle": "^0.39.0",
     "gsap": "^3.12.5",
     "sass": "^1.72.0",
     "vue": "^3.4.21",

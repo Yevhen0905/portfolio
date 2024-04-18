@@ -259,6 +259,10 @@ f
 
   .wrapper_project {
     padding: 60px 0;
+
+    @media only screen and (max-width: 768px) {
+      padding: 35px 0;
+    }
   }
 
   .project_content_item {

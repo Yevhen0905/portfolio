@@ -49,6 +49,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: 768px) {
+        padding: 35px 0;
+    }
   }
 
   .skills_list_wrapper {

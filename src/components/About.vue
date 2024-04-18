@@ -47,10 +47,13 @@
         >
       </div>
     </div>
+    <Animation />
   </div>
 </template>
 
 <script setup>
+  import Animation from './Animation.vue';
+
   import {ref, onMounted} from 'vue';
 
   const mainTitle = ref(null);
@@ -65,6 +68,7 @@
 <style lang="scss">
   .wrapper_home {
     position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,21 +79,6 @@
     height: 100%;
   }
 
-  .title {
-    font-size: 51px;
-    font-weight: 800;
-    text-align: center;
-    background: linear-gradient(45deg, #4158d0 0%, #c850c0 27%, #ffcc70 100%);
-    color: #0f2e6e;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 5px transparent;
-
-    @media only screen and (max-width: 768px) {
-      font-size: 35px;
-      margin-bottom: 10px;
-    }
-  }
-
   .description {
     max-width: 704px;
     text-align: center;
@@ -97,9 +86,9 @@
     font-size: 24px;
     font-weight: 500;
     color: var(--base-color);
-    background: linear-gradient(45deg, #4158d0 0%, #c850c0 27%, #ffcc70 100%);
+    background: linear-gradient(45deg, #4158d0 0%, #542551 27%, #342e23 100%);
     -webkit-background-clip: text;
-    -webkit-text-stroke: 1px transparent;
+    -webkit-text-stroke: 3px transparent;
 
     @media only screen and (max-width: 768px) {
       font-size: 19px;
@@ -167,5 +156,22 @@
   .loaded .home_btn {
     transform: translate(0px, 0);
     opacity: 1;
+  }
+
+  .title {
+    position: relative;
+    overflow: hidden;
+    font-size: 51px;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(45deg, #4158d0 0%, #c850c0 27%, #ffcc70 100%);
+    color: #0f2e6e;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 5px transparent;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
   }
 </style>

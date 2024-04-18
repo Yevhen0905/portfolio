@@ -57,5 +57,6 @@
     height: calc(100vh - var(--header-height));
     background: var(--bg-color-primary);
     min-height: 415px;
+    overflow: hidden;
   }
 </style>
