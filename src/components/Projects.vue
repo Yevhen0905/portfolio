@@ -232,6 +232,7 @@
     'HTML',
     'SCSS',
     'VUE',
+    'Vue CLI',
     'Vue-router',
     'Vuetify',
     'Rest API',
@@ -241,12 +242,27 @@
     'HTML',
     'SCSS',
     'Nuxt',
+    'Vite',
     'Swiper',
     'Fetch API'
   ]);
-  const listToolsForTodo = ref(['HTML', 'SCSS', 'Vue', 'Vue-router', 'Vuex']);
-  const listToolsForPhone = ref(['HTML', 'SCSS', 'Vue', 'Vue-router', 'Pinia']);
-  const listToolsForList = ref(['HTML', 'SCSS', 'Vue', 'Vue-router']);
+  const listToolsForTodo = ref([
+    'HTML',
+    'SCSS',
+    'Vue',
+    'Vue CLI',
+    'Vue-router',
+    'Vuex'
+  ]);
+  const listToolsForPhone = ref([
+    'HTML',
+    'SCSS',
+    'Vue',
+    'Vite',
+    'Vue-router',
+    'Pinia'
+  ]);
+  const listToolsForList = ref(['HTML', 'SCSS', 'Vue', 'Vite', 'Vue-router']);
 
   onMounted(() => initIntersectionObserver('0.3', 'active'));
 </script>

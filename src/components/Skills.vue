@@ -4,8 +4,8 @@
       <div data-item class="title_small">Skills</div>
       <div class="skills_content">
         <div data-item class="description_small description_skills">
-          I am constantly improving my skills to create well-functioning websites and
-          applications
+          I am constantly improving my skills to create well-functioning
+          websites and applications
         </div>
         <div data-item class="skills_list_wrapper">
           <div class="skills_list" v-for="skill in listSkills" :key="skill">
@@ -26,12 +26,14 @@
     'CSS',
     'SCSS',
     'JavaScript',
-    'VUE',
+    'VUE.js',
     'Vuex | Pinia',
     'Vue-router',
-    'NUXT',
+    'Vue CLI | Vite',
+    'NUXT.js',
     'Git | GitHub | Gitlab',
     'Figma',
+    'ESLint',
     'Trello'
   ]);
 
@@ -51,7 +53,7 @@
     justify-content: center;
 
     @media only screen and (max-width: 768px) {
-        padding: 35px 0;
+      padding: 35px 0;
     }
   }
 
