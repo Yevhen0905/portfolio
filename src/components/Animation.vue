@@ -41,4 +41,18 @@
   css-doodle {
     contain: style;
   }
+
+  .animation_dnk {
+    @media only screen and (max-width: 600px) {
+      transform: scale(1.2);
+    }
+
+    @media only screen and (max-width: 550px) {
+      transform: scale(1.4);
+    }
+
+    @media only screen and (max-width: 450px) {
+      transform: scale(1.6);
+    }
+  }
 </style>
