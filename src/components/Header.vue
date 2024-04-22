@@ -186,7 +186,7 @@
 
   .header.open {
     position: relative;
-    z-index: auto;
+    z-index: 4;
   }
 
   .open .list {
@@ -264,7 +264,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
     background-color: rgb(42 41 41 / 73%);
     transition: all 0.5s ease;
   }

@@ -58,11 +58,7 @@
 
   const mainTitle = ref(null);
 
-  onMounted(() =>
-    window.addEventListener('load', () =>
-      mainTitle.value.classList.add('loaded')
-    )
-  );
+  onMounted(() => mainTitle.value.classList.add('loaded'));
 </script>
 
 <style lang="scss">
