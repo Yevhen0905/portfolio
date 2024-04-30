@@ -34,6 +34,7 @@
     'Git | GitHub | Gitlab',
     'Figma',
     'ESLint',
+    'Webflow',
     'Trello'
   ]);
 
