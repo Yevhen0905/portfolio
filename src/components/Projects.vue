@@ -10,7 +10,7 @@
           class="project_content_item"
         >
           <div class="project_content_item_img">
-            <img :src="`src/assets/img/${project.image}.png`" alt="" />
+            <img :src="project.image" alt="" />
           </div>
           <div class="project_content_item_description">
             <h3 class="title_project">{{ project.title }}</h3>
@@ -50,7 +50,8 @@
     {
       title: 'Responsive website',
       text: 'The fully responsive website uses the best coding practices and looks equally good on devices of different sizes. It also incorporates element animations',
-      image: 'website',
+      image:
+        'https://i.gstatvb.com/f72129cf33a38d5ee47d45a150eec7d61715689862.rng.webp',
       listToolsForWebsite: ['HTML', 'SCSS', 'JavaScript', 'Swiper'],
       linkSite: 'https://yevhen0905.github.io/responsive_website/',
       linkGithub: 'https://github.com/Yevhen0905/website'
@@ -58,7 +59,8 @@
     {
       title: 'Marvel product',
       text: 'The web application utilizes the Marvel API, providing users with access to comprehensive information about comics and characters',
-      image: 'marvel',
+      image:
+        'https://i.gstatvb.com/2e64496312baf0bf0aeb2153644959a31715689960.rng.webp',
       listToolsForWebsite: [
         'HTML',
         'SCSS',
@@ -75,7 +77,7 @@
     {
       title: 'List',
       text: 'The list is retrieved using the Fetch API. It includes sorting, filtering, and searching by name, as well as animated elements. Additionally, Vue Router is utilized to save all actions in the page URL',
-      image: 'list',
+      image: 'https://i.gstatvb.com/09b911564b32c29f44b33fa9f4840b061715689989.rng.webp',
       listToolsForWebsite: ['HTML', 'SCSS', 'Vue', 'Vite', 'Vue-router'],
       linkSite: 'https://yevhen0905.github.io/list_processing/',
       linkGithub: 'https://github.com/Yevhen0905/list_processing'
@@ -83,7 +85,7 @@
     {
       title: 'Weather forecast',
       text: 'Developed with the weather API, this application displays detailed weather forecasts for the current day and provides a more generalized overview for the next five days',
-      image: 'weather',
+      image: 'https://i.gstatvb.com/fabd57437cdfdd400706f323db3249ad1715690013.rng.webp',
       listToolsForWebsite: [
         'HTML',
         'SCSS',
@@ -98,7 +100,7 @@
     {
       title: 'Telephone directory',
       text: 'A phone program for storing and managing contacts using the Fetch API. The data is stored on a remote server.  There is a possibility to search, sort and filter selected contacts, pagination is implemented.',
-      image: 'telephone',
+      image: 'https://i.gstatvb.com/e18e595f127c9694b539f07cd6cba5ea1715690037.rng.webp',
       listToolsForWebsite: [
         'HTML',
         'SCSS',
@@ -114,7 +116,7 @@
     {
       title: 'ToDo',
       text: 'An app for to-do lists and tasks',
-      image: 'todo',
+      image: 'https://i.gstatvb.com/9c0983aa2de0e4080aff8c993aa93ab91715690057.rng.webp',
       listToolsForWebsite: [
         'HTML',
         'SCSS',
