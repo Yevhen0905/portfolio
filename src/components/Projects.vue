@@ -3,215 +3,34 @@
     <div class="wrapper_project">
       <div class="title_small">Projects</div>
       <div class="project_content">
-        <div data-item class="project_content_item">
+        <div
+          v-for="project in listProject"
+          :key="project"
+          data-item
+          class="project_content_item"
+        >
           <div class="project_content_item_img">
-            <img src="../assets/img/website.png" alt="website" />
+            <img :src="`src/assets/img/${project.image}.png`" alt="" />
           </div>
-
           <div class="project_content_item_description">
-            <h3 class="title_project">Responsive website</h3>
-            <p class="description_project">
-              The fully responsive website uses the best coding practices and
-              looks equally good on devices of different sizes. It also
-              incorporates element animations
-            </p>
+            <h3 class="title_project">{{ project.title }}</h3>
+            <p class="description_project">{{ project.text }}</p>
             <div class="wrapper_list_tools">
               <div
                 class="list_tools"
-                v-for="skill in listToolsForWebsite"
+                v-for="skill in project.listToolsForWebsite"
                 :key="skill"
               >
                 {{ skill }}
               </div>
             </div>
             <div class="wrapper_btn_project">
-              <a
-                class="link_btn red"
-                href="https://yevhen0905.github.io/responsive_website/"
-                target="_blank"
+              <a class="link_btn red" :href="project.linkSite" target="_blank"
                 >Visit site</a
               >
               <a
                 class="link_btn grey"
-                href="https://github.com/Yevhen0905/website"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-        <div data-item class="project_content_item">
-          <div class="project_content_item_img">
-            <img src="../assets/img/marvel.png" alt="website" />
-          </div>
-          <div class="project_content_item_description">
-            <h3 class="title_project">Marvel product</h3>
-            <p class="description_project">
-              The web application utilizes the Marvel API, providing users with
-              access to comprehensive information about comics and characters
-            </p>
-            <div class="wrapper_list_tools">
-              <div
-                class="list_tools"
-                v-for="skill in listToolsForMarvel"
-                :key="skill"
-              >
-                {{ skill }}
-              </div>
-            </div>
-            <div class="wrapper_btn_project">
-              <a
-                class="link_btn red"
-                href="https://yevhen0905.github.io/marvel_product/"
-                target="_blank"
-                >Visit site</a
-              >
-              <a
-                class="link_btn grey"
-                href="https://github.com/Yevhen0905/marvel_product"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div data-item class="project_content_item">
-          <div class="project_content_item_img">
-            <img src="../assets/img/list.png" alt="weather" />
-          </div>
-          <div class="project_content_item_description">
-            <h3 class="title_project">List</h3>
-            <p class="description_project">
-              The list is retrieved using the Fetch API. It includes sorting,
-              filtering, and searching by name, as well as animated elements.
-              Additionally, Vue Router is utilized to save all actions in the
-              page URL
-            </p>
-            <div class="wrapper_list_tools">
-              <div
-                class="list_tools"
-                v-for="skill in listToolsForList"
-                :key="skill"
-              >
-                {{ skill }}
-              </div>
-            </div>
-            <div class="wrapper_btn_project">
-              <a
-                class="link_btn red"
-                href="https://yevhen0905.github.io/list_processing/"
-                target="_blank"
-                >Visit site</a
-              >
-              <a
-                class="link_btn grey"
-                href="https://github.com/Yevhen0905/list_processing"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div data-item class="project_content_item">
-          <div class="project_content_item_img">
-            <img src="../assets/img/weather.png" alt="weather" />
-          </div>
-          <div class="project_content_item_description">
-            <h3 class="title_project">Weather forecast</h3>
-            <p class="description_project">
-              Developed with the weather API, this application displays detailed
-              weather forecasts for the current day and provides a more
-              generalized overview for the next five days
-            </p>
-            <div class="wrapper_list_tools">
-              <div
-                class="list_tools"
-                v-for="skill in listToolsForWeather"
-                :key="skill"
-              >
-                {{ skill }}
-              </div>
-            </div>
-            <div class="wrapper_btn_project">
-              <a
-                class="link_btn red"
-                href="https://yevhen0905.github.io/Weather_nuxt/"
-                target="_blank"
-                >Visit site</a
-              >
-              <a
-                class="link_btn grey"
-                href="https://github.com/Yevhen0905/Weather_nuxt"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div data-item class="project_content_item">
-          <div class="project_content_item_img">
-            <img src="../assets/img/phonebook.png" alt="weather" />
-          </div>
-          <div class="project_content_item_description">
-            <h3 class="title_project">Telephone directory</h3>
-            <p class="description_project">
-              Phone book for storing and managing contacts
-            </p>
-            <div class="wrapper_list_tools">
-              <div
-                class="list_tools"
-                v-for="skill in listToolsForPhone"
-                :key="skill"
-              >
-                {{ skill }}
-              </div>
-            </div>
-            <div class="wrapper_btn_project">
-              <a
-                class="link_btn red"
-                href="https://yevhen0905.github.io/telephone_directory/"
-                target="_blank"
-                >Visit site</a
-              >
-              <a
-                class="link_btn grey"
-                href="https://github.com/Yevhen0905/telephone_directory"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div data-item class="project_content_item">
-          <div class="project_content_item_img">
-            <img src="../assets/img/todo.png" alt="weather" />
-          </div>
-          <div class="project_content_item_description">
-            <h3 class="title_project">ToDo</h3>
-            <p class="description_project">An app for to-do lists and tasks</p>
-            <div class="wrapper_list_tools">
-              <div
-                class="list_tools"
-                v-for="skill in listToolsForTodo"
-                :key="skill"
-              >
-                {{ skill }}
-              </div>
-            </div>
-            <div class="wrapper_btn_project">
-              <a
-                class="link_btn red"
-                href="https://yevhen0905.github.io/SPA_todo/"
-                target="_blank"
-                >Visit site</a
-              >
-              <a
-                class="link_btn grey"
-                href="https://github.com/Yevhen0905/SPA_todo"
+                :href="project.linkGithub"
                 target="_blank"
                 >Github</a
               >
@@ -227,46 +46,91 @@
   import {ref, onMounted} from 'vue';
   import {initIntersectionObserver} from '../composables/observe.js';
 
-  const listToolsForWebsite = ref(['HTML', 'SCSS', 'JavaScript']);
-  const listToolsForMarvel = ref([
-    'HTML',
-    'SCSS',
-    'VUE',
-    'Vue CLI',
-    'Vue-router',
-    'Vuetify',
-    'Rest API',
-    'Axios'
+  const listProject = ref([
+    {
+      title: 'Responsive website',
+      text: 'The fully responsive website uses the best coding practices and looks equally good on devices of different sizes. It also incorporates element animations',
+      image: 'website',
+      listToolsForWebsite: ['HTML', 'SCSS', 'JavaScript', 'Swiper'],
+      linkSite: 'https://yevhen0905.github.io/responsive_website/',
+      linkGithub: 'https://github.com/Yevhen0905/website'
+    },
+    {
+      title: 'Marvel product',
+      text: 'The web application utilizes the Marvel API, providing users with access to comprehensive information about comics and characters',
+      image: 'marvel',
+      listToolsForWebsite: [
+        'HTML',
+        'SCSS',
+        'VUE',
+        'Vue CLI',
+        'Vue-router',
+        'Vuetify',
+        'Rest API',
+        'Axios'
+      ],
+      linkSite: 'https://yevhen0905.github.io/marvel_product/',
+      linkGithub: 'https://github.com/Yevhen0905/marvel_product'
+    },
+    {
+      title: 'List',
+      text: 'The list is retrieved using the Fetch API. It includes sorting, filtering, and searching by name, as well as animated elements. Additionally, Vue Router is utilized to save all actions in the page URL',
+      image: 'list',
+      listToolsForWebsite: ['HTML', 'SCSS', 'Vue', 'Vite', 'Vue-router'],
+      linkSite: 'https://yevhen0905.github.io/list_processing/',
+      linkGithub: 'https://github.com/Yevhen0905/list_processing'
+    },
+    {
+      title: 'Weather forecast',
+      text: 'Developed with the weather API, this application displays detailed weather forecasts for the current day and provides a more generalized overview for the next five days',
+      image: 'weather',
+      listToolsForWebsite: [
+        'HTML',
+        'SCSS',
+        'Nuxt',
+        'Vite',
+        'Swiper',
+        'Fetch API'
+      ],
+      linkSite: 'https://yevhen0905.github.io/Weather_nuxt/',
+      linkGithub: 'https://github.com/Yevhen0905/Weather_nuxt'
+    },
+    {
+      title: 'Telephone directory',
+      text: 'A phone program for storing and managing contacts using the Fetch API. The data is stored on a remote server.  There is a possibility to search, sort and filter selected contacts, pagination is implemented.',
+      image: 'telephone',
+      listToolsForWebsite: [
+        'HTML',
+        'SCSS',
+        'Vue',
+        'Vite',
+        'Vue-router',
+        'Pinia',
+        'Rest API'
+      ],
+      linkSite: 'https://yevhen0905.github.io/telephone_mockapi/',
+      linkGithub: 'https://github.com/Yevhen0905/telephone_mockapi'
+    },
+    {
+      title: 'ToDo',
+      text: 'An app for to-do lists and tasks',
+      image: 'todo',
+      listToolsForWebsite: [
+        'HTML',
+        'SCSS',
+        'Vue',
+        'Vue CLI',
+        'Vue-router',
+        'Vuex'
+      ],
+      linkSite: 'https://yevhen0905.github.io/SPA_todo/',
+      linkGithub: 'https://github.com/Yevhen0905/SPA_todo'
+    }
   ]);
-  const listToolsForWeather = ref([
-    'HTML',
-    'SCSS',
-    'Nuxt',
-    'Vite',
-    'Swiper',
-    'Fetch API'
-  ]);
-  const listToolsForTodo = ref([
-    'HTML',
-    'SCSS',
-    'Vue',
-    'Vue CLI',
-    'Vue-router',
-    'Vuex'
-  ]);
-  const listToolsForPhone = ref([
-    'HTML',
-    'SCSS',
-    'Vue',
-    'Vite',
-    'Vue-router',
-    'Pinia'
-  ]);
-  const listToolsForList = ref(['HTML', 'SCSS', 'Vue', 'Vite', 'Vue-router']);
 
   onMounted(() => initIntersectionObserver('0.3', 'active'));
 </script>
-f
+
 <style lang="scss">
   .section_project {
     background: var(--bg-color-primary);
