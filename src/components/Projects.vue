@@ -99,7 +99,7 @@
     },
     {
       title: 'Telephone directory',
-      text: 'A phone program for storing and managing contacts using the Fetch API. The data is stored on a remote server.  There is a possibility to search, sort and filter selected contacts, pagination is implemented.',
+      text: 'Phone book for storing and managing contacts.   Data is stored on a remote server and retrieved using the Fetch API. It is possible to search, sort and filter selected contacts, and pagination is implemented.',
       image: 'https://i.gstatvb.com/e18e595f127c9694b539f07cd6cba5ea1715690037.rng.webp',
       listToolsForWebsite: [
         'HTML',
