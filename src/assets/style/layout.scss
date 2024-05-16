@@ -84,3 +84,23 @@ body {
 ::-moz-scrollbar-thumb {
   background: rgb(221 78 81);
 }
+
+.list_social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  &_link {
+    font-size: 45px;
+    color: #e9c793;
+    transition: var(--transition);
+
+    @media only screen and (max-width: 480px) {
+      font-size: 35px;
+    }
+
+    &:hover {
+      color: #a38250;
+    }
+  }
+}

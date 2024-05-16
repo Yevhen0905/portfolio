@@ -4,32 +4,7 @@
       <div class="footer_content">
         <h3 class="footer_title">Vittsenko Evgen</h3>
         <div class="home_icon footer_icon">
-          <ul class="list_social">
-            <li class="list_social_item">
-              <a
-                class="list_social_link footer_social"
-                href="https://t.me/EvgenVittsenko"
-                target="_blank"
-                ><i class="icon fa-brands fa-telegram"></i
-              ></a>
-            </li>
-            <li class="list_social_item">
-              <a
-                class="list_social_link footer_social"
-                href="https://www.linkedin.com/in/evgen-vittsenko-739529250/"
-                target="_blank"
-                ><i class="icon fa fa-linkedin" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li class="list_social_item">
-              <a
-                class="list_social_link footer_social"
-                href="https://github.com/Yevhen0905"
-                target="_blank"
-                ><i class="icon fa-brands fa-github"></i
-              ></a>
-            </li>
-          </ul>
+          <SocialLinks />
         </div>
         <p class="footer_years">2024</p>
       </div>
@@ -37,7 +12,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import SocialLinks from './SocialLinks.vue';
+</script>
 
 <style lang="scss">
   .footer {
@@ -62,14 +39,6 @@
     transition: all 0.3s ease;
   }
 
-  .list_social_link.footer_social {
-    color: var(--font-color);
-    transition: var(--transition);
-
-    &:hover {
-      color: rgb(238 121 121);
-    }
-  }
   .footer_years {
     color: var(--font-color);
     text-align: center;
@@ -79,6 +48,15 @@
 
     @media only screen and (max-width: 480px) {
       font-size: 16px;
+    }
+  }
+
+  .footer_icon .list_social_link {
+    color: var(--font-color);
+    transition: var(--transition);
+
+    &:hover {
+      color: rgb(238 121 121);
     }
   }
 </style>

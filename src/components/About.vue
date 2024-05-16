@@ -10,32 +10,7 @@
         </p>
       </div>
       <div class="home_icon">
-        <ul class="list_social">
-          <li class="list_social_item">
-            <a
-              class="list_social_link"
-              href="https://t.me/EvgenVittsenko"
-              target="_blank"
-              ><i class="icon fa-brands fa-telegram"></i
-            ></a>
-          </li>
-          <li class="list_social_item">
-            <a
-              class="list_social_link"
-              href="https://www.linkedin.com/in/evgen-vittsenko-739529250/"
-              target="_blank"
-              ><i class="icon fa fa-linkedin" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li class="list_social_item">
-            <a
-              class="list_social_link"
-              href="https://github.com/Yevhen0905"
-              target="_blank"
-              ><i class="icon fa-brands fa-github"></i
-            ></a>
-          </li>
-        </ul>
+        <SocialLinks />
       </div>
       <div class="home_btn">
         <a href="#project" class="link_btn red">View Project</a
@@ -53,6 +28,7 @@
 
 <script setup>
   import Animation from './Animation.vue';
+  import SocialLinks from './SocialLinks.vue';
 
   import {ref, onMounted} from 'vue';
 
@@ -88,26 +64,6 @@
 
     @media only screen and (max-width: 768px) {
       font-size: 19px;
-    }
-  }
-
-  .list_social {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-
-    &_link {
-      font-size: 45px;
-      color: #e9c793;
-      transition: var(--transition);
-
-      @media only screen and (max-width: 480px) {
-        font-size: 35px;
-      }
-
-      &:hover {
-        color: #a38250;
-      }
     }
   }
 
