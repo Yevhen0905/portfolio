@@ -26,6 +26,7 @@
     'CSS',
     'SCSS',
     'JavaScript',
+    'TypeScript',
     'VUE.js',
     'Vuex | Pinia',
     'Vue-router',
