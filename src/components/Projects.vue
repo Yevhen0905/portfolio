@@ -75,17 +75,30 @@
       linkGithub: 'https://github.com/Yevhen0905/marvel_product'
     },
     {
-      title: 'List',
-      text: 'The list is retrieved using the Fetch API. It includes sorting, filtering, and searching by name, as well as animated elements. Additionally, Vue Router is utilized to save all actions in the page URL',
-      image: 'https://i.gstatvb.com/09b911564b32c29f44b33fa9f4840b061715689989.rng.webp',
-      listToolsForWebsite: ['HTML', 'SCSS', 'Vue', 'Vite', 'Vue-router'],
-      linkSite: 'https://yevhen0905.github.io/list_processing/',
-      linkGithub: 'https://github.com/Yevhen0905/list_processing'
+      title: 'Sneaker Store',
+      text: 'The web application of the store uses the Rest API. All manipulations with the storage of favourite products and finished orders are stored on the server. LocalStorage is used to store selected products in the shopping cart.',
+      image:
+        'https://i.gstatvb.com/8484c5f5987aa445a9506755b1233e551718287001.rng.webp',
+      listToolsForWebsite: [
+        'HTML',
+        'SCSS',
+        'VUE',
+        'Vite',
+        'Vue-router',
+        'Pinia',
+        'Rest API',
+        'Fetch API',
+        'Tailwind',
+        'ESLint'
+      ],
+      linkSite: 'https://yevhen0905.github.io/sneaker_store/',
+      linkGithub: 'https://github.com/Yevhen0905/sneaker_store'
     },
     {
       title: 'Weather forecast',
       text: 'Developed with the weather API, this application displays detailed weather forecasts for the current day and provides a more generalized overview for the next five days',
-      image: 'https://i.gstatvb.com/fabd57437cdfdd400706f323db3249ad1715690013.rng.webp',
+      image:
+        'https://i.gstatvb.com/fabd57437cdfdd400706f323db3249ad1715690013.rng.webp',
       listToolsForWebsite: [
         'HTML',
         'SCSS',
@@ -98,9 +111,19 @@
       linkGithub: 'https://github.com/Yevhen0905/Weather_nuxt'
     },
     {
+      title: 'List',
+      text: 'The list is retrieved using the Fetch API. It includes sorting, filtering, and searching by name, as well as animated elements. Additionally, Vue Router is utilized to save all actions in the page URL',
+      image:
+        'https://i.gstatvb.com/09b911564b32c29f44b33fa9f4840b061715689989.rng.webp',
+      listToolsForWebsite: ['HTML', 'SCSS', 'Vue', 'Vite', 'Vue-router'],
+      linkSite: 'https://yevhen0905.github.io/list_processing/',
+      linkGithub: 'https://github.com/Yevhen0905/list_processing'
+    },
+    {
       title: 'Telephone directory',
       text: 'Phone book for storing and managing contacts.   Data is stored on a remote server and retrieved using the Fetch API. It is possible to search, sort and filter selected contacts, and pagination is implemented.',
-      image: 'https://i.gstatvb.com/e18e595f127c9694b539f07cd6cba5ea1715690037.rng.webp',
+      image:
+        'https://i.gstatvb.com/e18e595f127c9694b539f07cd6cba5ea1715690037.rng.webp',
       listToolsForWebsite: [
         'HTML',
         'SCSS',
@@ -116,7 +139,8 @@
     {
       title: 'ToDo',
       text: 'An app for to-do lists and tasks',
-      image: 'https://i.gstatvb.com/9c0983aa2de0e4080aff8c993aa93ab91715690057.rng.webp',
+      image:
+        'https://i.gstatvb.com/9c0983aa2de0e4080aff8c993aa93ab91715690057.rng.webp',
       listToolsForWebsite: [
         'HTML',
         'SCSS',
