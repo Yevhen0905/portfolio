@@ -11,7 +11,7 @@
     <li class="list_social_item">
       <a
         class="list_social_link"
-        href="https://www.linkedin.com/in/evgen-vittsenko-739529250/"
+        href="//www.linkedin.com/in/yevhen-vittsenko-739529250/"
         target="_blank"
         ><i class="icon fa fa-linkedin" aria-hidden="true"></i
       ></a>
