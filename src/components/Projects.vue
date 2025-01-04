@@ -74,26 +74,26 @@
       linkSite: 'https://yevhen0905.github.io/marvel_product/',
       linkGithub: 'https://github.com/Yevhen0905/marvel_product'
     },
-    {
-      title: 'Sneaker Store',
-      text: 'The web application of the store uses the Rest API. All manipulations with the storage of favourite products and finished orders are stored on the server. LocalStorage is used to store selected products in the shopping cart.',
-      image:
-        'https://i.gstatvb.com/8484c5f5987aa445a9506755b1233e551718287001.rng.webp',
-      listToolsForWebsite: [
-        'HTML',
-        'SCSS',
-        'VUE',
-        'Vite',
-        'Vue-router',
-        'Pinia',
-        'Rest API',
-        'Fetch API',
-        'Tailwind',
-        'ESLint'
-      ],
-      linkSite: 'https://yevhen0905.github.io/sneaker_store/',
-      linkGithub: 'https://github.com/Yevhen0905/sneaker_store'
-    },
+    // {
+    //   title: 'Sneaker Store',
+    //   text: 'The web application of the store uses the Rest API. All manipulations with the storage of favourite products and finished orders are stored on the server. LocalStorage is used to store selected products in the shopping cart.',
+    //   image:
+    //     'https://i.gstatvb.com/8484c5f5987aa445a9506755b1233e551718287001.rng.webp',
+    //   listToolsForWebsite: [
+    //     'HTML',
+    //     'SCSS',
+    //     'VUE',
+    //     'Vite',
+    //     'Vue-router',
+    //     'Pinia',
+    //     'Rest API',
+    //     'Fetch API',
+    //     'Tailwind',
+    //     'ESLint'
+    //   ],
+    //   linkSite: 'https://yevhen0905.github.io/sneaker_store/',
+    //   linkGithub: 'https://github.com/Yevhen0905/sneaker_store'
+    // },
     {
       title: 'Weather forecast',
       text: 'Developed with the weather API, this application displays detailed weather forecasts for the current day and provides a more generalized overview for the next five days',
