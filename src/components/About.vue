@@ -15,7 +15,7 @@
       <div class="home_btn">
         <a href="#project" class="link_btn red">View Project</a
         ><a
-          href="https://yevhen0905.github.io/RESUME/"
+          href="https://yevhen0905.github.io/RESUME_NEW/"
           class="link_btn red"
           target="_blank"
           >Open CV</a
