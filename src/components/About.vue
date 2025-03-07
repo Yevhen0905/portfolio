@@ -4,9 +4,9 @@
       <div class="home_text">
         <h1 class="title">I`m Vittsenko Evgen</h1>
         <p class="description">
-          I am a front-end developer with over 1.5 year of experience. I
-          specialize in building website and web application interfaces,
-          focusing on delivering maximum business value.
+          I am a front-end developer with over 1.5 years of experience. 
+          I specialise in building website and web application interfaces, 
+          focusing on delivering maximum business value. Below, you can find my CV, which details my experience.
         </p>
       </div>
       <div class="home_icon">
@@ -52,7 +52,7 @@
   }
 
   .description {
-    max-width: 704px;
+    max-width: 800px;
     text-align: center;
     width: 100%;
     font-size: 24px;

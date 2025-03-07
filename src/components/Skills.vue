@@ -31,6 +31,7 @@
     'NUXT.js',
     'Vuex | Pinia',
     'Vue-router',
+    'Vuetify',
     'Vue CLI | Vite',
     'Rest API',
     'Tailwind',
