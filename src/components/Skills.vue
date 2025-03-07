@@ -39,6 +39,7 @@
     'Figma',
     'ESLint',
     'Webflow',
+    'Linux',
     'Trello'
   ]);
 
