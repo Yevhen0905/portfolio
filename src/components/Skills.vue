@@ -34,13 +34,13 @@
     'Vuetify',
     'Vue CLI | Vite',
     'Rest API',
-    'Tailwind',
     'Git | GitHub | Gitlab',
+    'VS Code | Webstorm/PyCharm',
     'Figma',
     'ESLint',
-    'Webflow',
     'Linux',
-    'Trello'
+    'Jira |Trello',
+    'Webflow'
   ]);
 
   onMounted(() => initIntersectionObserver('0.3', 'active'));

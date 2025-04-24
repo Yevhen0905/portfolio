@@ -36,9 +36,8 @@
   };
 
   const goToTop = () => {
-    const header = document.querySelector('#header');
-    header.scrollIntoView({
-      block: 'start',
+    window.scrollTo({
+      top: 0,
       behavior: 'smooth'
     });
   };

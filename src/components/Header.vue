@@ -116,6 +116,9 @@
 
 <style lang="scss">
   .header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
     height: var(--header-height);
     background: var(--bg-light);
     transition: all 0.3s ease;

@@ -13,13 +13,27 @@
         <SocialLinks />
       </div>
       <div class="home_btn">
-        <a href="#project" class="link_btn red">View Project</a
-        ><a
+        <a 
+          href="#project" 
+          class="link_btn red"
+        >
+          View Project
+        </a>
+        <a
           href="https://yevhen0905.github.io/RESUME_NEW/"
           class="link_btn red"
           target="_blank"
-          >Open CV</a
         >
+          Open CV
+        </a>
+        <a
+          href="file/Resume_Frontend_dev_Vittsenko_Evgen.pdf"
+          class="link_btn red"
+          download="Resume_Frontend_dev_Vittsenko_Evgen.pdf"
+          type="application/pdf"
+        >
+          Download CV (PDF)
+        </a>
       </div>
     </div>
     <Animation />
@@ -70,10 +84,12 @@
   .home_btn {
     margin-top: 20px;
     display: flex;
-    gap: 53px;
+    justify-content: center;
+    gap: 20px;
 
     @media only screen and (max-width: 768px) {
-      gap: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
   }
 
