@@ -4,26 +4,17 @@
       <div class="home_text">
         <h1 class="title">I`m Vittsenko Evgen</h1>
         <p class="description">
-          I am a front-end developer with over 1.5 years of experience. 
-          I specialise in building website and web application interfaces, 
-          focusing on delivering maximum business value. Below, you can find my CV, which details my experience.
+          I am a front-end developer with over 1.5 years of experience. I specialise in building
+          website and web application interfaces, focusing on delivering maximum business value.
+          Below, you can find my CV, which details my experience.
         </p>
       </div>
       <div class="home_icon">
         <SocialLinks />
       </div>
       <div class="home_btn">
-        <a 
-          href="#project" 
-          class="link_btn red"
-        >
-          View Project
-        </a>
-        <a
-          href="https://yevhen0905.github.io/RESUME_NEW/"
-          class="link_btn red"
-          target="_blank"
-        >
+        <a href="#project" class="link_btn red"> View Project </a>
+        <a href="https://yevhen0905.github.io/RESUME_NEW/" class="link_btn red" target="_blank">
           Open CV
         </a>
         <a
@@ -41,14 +32,14 @@
 </template>
 
 <script setup>
-  import Animation from './Animation.vue';
-  import SocialLinks from './SocialLinks.vue';
+  import Animation from './Animation.vue'
+  import SocialLinks from './SocialLinks.vue'
 
-  import {ref, onMounted} from 'vue';
+  import { ref, onMounted } from 'vue'
 
-  const mainTitle = ref(null);
+  const mainTitle = ref(null)
 
-  onMounted(() => mainTitle.value.classList.add('loaded'));
+  onMounted(() => mainTitle.value.classList.add('loaded'))
 </script>
 
 <style lang="scss">
