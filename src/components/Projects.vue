@@ -56,24 +56,24 @@
       linkSite: 'https://yevhen0905.github.io/responsive_website/',
       linkGithub: 'https://github.com/Yevhen0905/website'
     },
-    // {
-    //   title: 'Marvel product',
-    //   text: 'The web application utilizes the Marvel API, providing users with access to comprehensive information about comics and characters',
-    //   image:
-    //     'https://i.gstatvb.com/2e64496312baf0bf0aeb2153644959a31715689960.rng.webp',
-    //   listToolsForWebsite: [
-    //     'HTML',
-    //     'SCSS',
-    //     'VUE',
-    //     'Vue CLI',
-    //     'Vue-router',
-    //     'Vuetify',
-    //     'Rest API',
-    //     'Axios'
-    //   ],
-    //   linkSite: 'https://yevhen0905.github.io/marvel_product/',
-    //   linkGithub: 'https://github.com/Yevhen0905/marvel_product'
-    // },
+    {
+      title: 'Marvel product',
+      text: 'The web application utilizes the Marvel API, providing users with access to comprehensive information about comics and characters',
+      image:
+        'https://i.gstatvb.com/2e64496312baf0bf0aeb2153644959a31715689960.rng.webp',
+      listToolsForWebsite: [
+        'HTML',
+        'SCSS',
+        'VUE',
+        'Vue CLI',
+        'Vue-router',
+        'Vuetify',
+        'Rest API',
+        'Axios'
+      ],
+      linkSite: 'https://yevhen0905.github.io/marvel_product/',
+      linkGithub: 'https://github.com/Yevhen0905/marvel_product'
+    },
     // {
     //   title: 'Sneaker Store',
     //   text: 'The web application of the store uses the Rest API. All manipulations with the storage of favourite products and finished orders are stored on the server. LocalStorage is used to store selected products in the shopping cart.',
