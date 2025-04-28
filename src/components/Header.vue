@@ -1,5 +1,5 @@
 <template>
-  <div class="header" :class="{open: isActive}" id="header">
+  <div class="header" :class="{ open: isActive }" id="header">
     <div class="container">
       <div class="wrapper_header">
         <div class="wrapper_header_icon">
@@ -7,10 +7,8 @@
         </div>
         <nav class="nav">
           <ul class="list">
-            <li class="list_item" v-for="menu in menuList" :key="menu">
-              <a @click="closeMenu" class="list_item_link" :href="menu.href">{{
-                menu.title
-              }}</a>
+            <li @click="closeMenu" class="list_item" v-for="menu in menuList" :key="menu">
+              <a class="list_item_link" :href="menu.href">{{ menu.title }}</a>
             </li>
           </ul>
         </nav>
@@ -26,7 +24,7 @@
         </div>
       </div>
       <button
-        :class="['hamburger', 'hamburger--emphatic', {'is-active': isActive}]"
+        :class="['hamburger', 'hamburger--emphatic', { 'is-active': isActive }]"
         type="button"
         id="hamburger"
         @click="toggleActiveHamburger()"
@@ -41,80 +39,80 @@
 </template>
 
 <script setup>
-  import {ref, computed, onMounted} from 'vue';
+  import { ref, computed, onMounted } from 'vue'
 
   const props = defineProps({
     modelValue: {
       type: String,
-      default: ''
-    }
-  });
+      default: '',
+    },
+  })
 
   const menuList = ref([
     {
       title: 'Home',
-      href: '#home'
+      href: '#home',
     },
     {
       title: 'Skills',
-      href: '#skills'
+      href: '#skills',
     },
     {
       title: 'Project',
-      href: '#project'
+      href: '#project',
     },
     {
       title: 'Contacts',
-      href: '#contacts'
-    }
-  ]);
+      href: '#contacts',
+    },
+  ])
 
   const themeList = ref([
     {
       theme: 'theme_light',
       title: 'Light',
-      icon: 'fa-solid fa-sun'
+      icon: 'fa-solid fa-sun',
     },
     {
       theme: 'theme_dark',
       title: 'Dark',
-      icon: 'fa-solid fa-moon'
-    }
-  ]);
-  const isActive = ref(false);
+      icon: 'fa-solid fa-moon',
+    },
+  ])
+  const isActive = ref(false)
 
-  const emit = defineEmits(['update:modelValue']);
+  const emit = defineEmits(['update:modelValue'])
 
   const themeValue = computed({
     get() {
-      return props.modelValue;
+      return props.modelValue
     },
     set(value) {
-      emit('update:modelValue', value);
-    }
-  });
+      emit('update:modelValue', value)
+    },
+  })
 
   const toggleActiveHamburger = () => {
-    isActive.value = !isActive.value;
-  };
+    isActive.value = !isActive.value
+  }
 
   const closeMenu = () => {
-    isActive.value = false;
-  };
+    isActive.value = false
+  }
 
   const handleClickOutside = (event) => {
-    const menu = document.getElementById('header');
+    const menu = document.getElementById('header')
     if (menu && !menu.contains(event.target)) {
-      closeMenu();
+      closeMenu()
     }
-  };
+  }
 
   onMounted(() => {
-    document.addEventListener('click', handleClickOutside);
-  });
+    document.addEventListener('click', handleClickOutside)
+  })
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   .header {
     position: fixed;
     width: 100%;
@@ -122,6 +120,7 @@
     height: var(--header-height);
     background: var(--bg-light);
     transition: all 0.3s ease;
+    border-bottom: 1px solid var(--color-grey);
   }
 
   .wrapper_header {
@@ -159,9 +158,9 @@
     @media only screen and (max-width: 700px) {
       flex-direction: column;
       justify-content: center;
-      gap: 20px;
+      gap: 0;
       transform: translateY(-100%);
-      height: 250px;
+      height: 450px;
       position: fixed;
       z-index: 2;
       background: var(--bg-light);
@@ -176,6 +175,8 @@
       font-weight: 500;
       color: var(--color-accent);
       transition: all 0.3s ease;
+      width: 100%;
+      text-align: center;
 
       @media only screen and (max-width: 768px) {
         font-size: 18px;
@@ -183,6 +184,14 @@
 
       &:hover {
         color: var(--color-hover-text);
+      }
+
+      &_link {
+        @media only screen and (max-width: 700px) {
+          display: block;
+          width: 100%;
+          padding: 10px 0;
+        }
       }
     }
   }
@@ -241,7 +250,9 @@
     transform: translateX(-110%);
     bottom: 3px;
     border-radius: 5px;
-    transition: 0.15s ease, transform 0.25s ease-out;
+    transition:
+      0.15s ease,
+      transform 0.25s ease-out;
     background: var(--bg-light);
   }
 

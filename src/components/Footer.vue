@@ -1,19 +1,23 @@
 <template>
-  <div class="footer" id="contacts">
+  <div class="footer">
     <div class="container">
       <div class="footer_content">
         <h3 class="footer_title">Vittsenko Evgen</h3>
         <div class="home_icon footer_icon">
           <SocialLinks />
         </div>
-        <p class="footer_years">2024</p>
+        <p class="footer_years">{{ getCurrentYear() }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-  import SocialLinks from './SocialLinks.vue';
+  import SocialLinks from './SocialLinks.vue'
+
+  const getCurrentYear = () => {
+    return new Date().getFullYear()
+  }
 </script>
 
 <style lang="scss">

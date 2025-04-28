@@ -3,12 +3,7 @@
     <div class="wrapper_project">
       <div class="title_small">Projects</div>
       <div class="project_content">
-        <div
-          v-for="project in listProject"
-          :key="project"
-          data-item
-          class="project_content_item"
-        >
+        <div v-for="project in listProject" :key="project" data-item class="project_content_item">
           <div class="project_content_item_img">
             <img :src="project.image" alt="" />
           </div>
@@ -16,24 +11,13 @@
             <h3 class="title_project">{{ project.title }}</h3>
             <p class="description_project">{{ project.text }}</p>
             <div class="wrapper_list_tools">
-              <div
-                class="list_tools"
-                v-for="skill in project.listToolsForWebsite"
-                :key="skill"
-              >
+              <div class="list_tools" v-for="skill in project.listToolsForWebsite" :key="skill">
                 {{ skill }}
               </div>
             </div>
             <div class="wrapper_btn_project">
-              <a class="link_btn red" :href="project.linkSite" target="_blank"
-                >Visit site</a
-              >
-              <a
-                class="link_btn grey"
-                :href="project.linkGithub"
-                target="_blank"
-                >Github</a
-              >
+              <a class="link_btn red" :href="project.linkSite" target="_blank">Visit site</a>
+              <a class="link_btn grey" :href="project.linkGithub" target="_blank">Github</a>
             </div>
           </div>
         </div>
@@ -43,24 +27,22 @@
 </template>
 
 <script setup>
-  import {ref, onMounted} from 'vue';
-  import {initIntersectionObserver} from '../composables/observe.js';
+  import { ref, onMounted } from 'vue'
+  import { initIntersectionObserver } from '../composables/observe.js'
 
   const listProject = ref([
     {
       title: 'Responsive website',
       text: 'The fully responsive website uses the best coding practices and looks equally good on devices of different sizes. It also incorporates element animations',
-      image:
-        'https://i.gstatvb.com/f72129cf33a38d5ee47d45a150eec7d61715689862.rng.webp',
+      image: 'https://i.gstatvb.com/f72129cf33a38d5ee47d45a150eec7d61715689862.rng.webp',
       listToolsForWebsite: ['HTML', 'SCSS', 'JavaScript', 'Swiper'],
       linkSite: 'https://yevhen0905.github.io/responsive_website/',
-      linkGithub: 'https://github.com/Yevhen0905/website'
+      linkGithub: 'https://github.com/Yevhen0905/website',
     },
     {
       title: 'Marvel product',
       text: 'The web application utilizes the Marvel API, providing users with access to comprehensive information about comics and characters',
-      image:
-        'https://i.gstatvb.com/2e64496312baf0bf0aeb2153644959a31715689960.rng.webp',
+      image: 'https://i.gstatvb.com/2e64496312baf0bf0aeb2153644959a31715689960.rng.webp',
       listToolsForWebsite: [
         'HTML',
         'SCSS',
@@ -69,10 +51,10 @@
         'Vue-router',
         'Vuetify',
         'Rest API',
-        'Axios'
+        'Axios',
       ],
       linkSite: 'https://yevhen0905.github.io/marvel_product/',
-      linkGithub: 'https://github.com/Yevhen0905/marvel_product'
+      linkGithub: 'https://github.com/Yevhen0905/marvel_product',
     },
     // {
     //   title: 'Sneaker Store',
@@ -97,64 +79,38 @@
     {
       title: 'Weather forecast',
       text: 'Developed with the weather API, this application displays detailed weather forecasts for the current day and provides a more generalized overview for the next five days',
-      image:
-        'https://i.gstatvb.com/fabd57437cdfdd400706f323db3249ad1715690013.rng.webp',
-      listToolsForWebsite: [
-        'HTML',
-        'SCSS',
-        'Nuxt',
-        'Vite',
-        'Swiper',
-        'Fetch API'
-      ],
+      image: 'https://i.gstatvb.com/fabd57437cdfdd400706f323db3249ad1715690013.rng.webp',
+      listToolsForWebsite: ['HTML', 'SCSS', 'Nuxt', 'Vite', 'Swiper', 'Fetch API'],
       linkSite: 'https://yevhen0905.github.io/Weather_nuxt/',
-      linkGithub: 'https://github.com/Yevhen0905/Weather_nuxt'
+      linkGithub: 'https://github.com/Yevhen0905/Weather_nuxt',
     },
     {
       title: 'List',
       text: 'The list is retrieved using the Fetch API. It includes sorting, filtering, and searching by name, as well as animated elements. Additionally, Vue Router is utilized to save all actions in the page URL',
-      image:
-        'https://i.gstatvb.com/09b911564b32c29f44b33fa9f4840b061715689989.rng.webp',
+      image: 'https://i.gstatvb.com/09b911564b32c29f44b33fa9f4840b061715689989.rng.webp',
       listToolsForWebsite: ['HTML', 'SCSS', 'Vue', 'Vite', 'Vue-router'],
       linkSite: 'https://yevhen0905.github.io/list_processing/',
-      linkGithub: 'https://github.com/Yevhen0905/list_processing'
+      linkGithub: 'https://github.com/Yevhen0905/list_processing',
     },
     {
       title: 'Telephone directory',
       text: 'Phone book for storing and managing contacts.   Data is stored on a remote server and retrieved using the Fetch API. It is possible to search, sort and filter selected contacts, and pagination is implemented.',
-      image:
-        'https://i.gstatvb.com/e18e595f127c9694b539f07cd6cba5ea1715690037.rng.webp',
-      listToolsForWebsite: [
-        'HTML',
-        'SCSS',
-        'Vue',
-        'Vite',
-        'Vue-router',
-        'Pinia',
-        'Rest API'
-      ],
+      image: 'https://i.gstatvb.com/e18e595f127c9694b539f07cd6cba5ea1715690037.rng.webp',
+      listToolsForWebsite: ['HTML', 'SCSS', 'Vue', 'Vite', 'Vue-router', 'Pinia', 'Rest API'],
       linkSite: 'https://yevhen0905.github.io/telephone_mockapi/',
-      linkGithub: 'https://github.com/Yevhen0905/telephone_mockapi'
+      linkGithub: 'https://github.com/Yevhen0905/telephone_mockapi',
     },
     {
       title: 'ToDo',
       text: 'An app for to-do lists and tasks',
-      image:
-        'https://i.gstatvb.com/9c0983aa2de0e4080aff8c993aa93ab91715690057.rng.webp',
-      listToolsForWebsite: [
-        'HTML',
-        'SCSS',
-        'Vue',
-        'Vue CLI',
-        'Vue-router',
-        'Vuex'
-      ],
+      image: 'https://i.gstatvb.com/9c0983aa2de0e4080aff8c993aa93ab91715690057.rng.webp',
+      listToolsForWebsite: ['HTML', 'SCSS', 'Vue', 'Vue CLI', 'Vue-router', 'Vuex'],
       linkSite: 'https://yevhen0905.github.io/SPA_todo/',
-      linkGithub: 'https://github.com/Yevhen0905/SPA_todo'
-    }
-  ]);
+      linkGithub: 'https://github.com/Yevhen0905/SPA_todo',
+    },
+  ])
 
-  onMounted(() => initIntersectionObserver('0.3', 'active'));
+  onMounted(() => initIntersectionObserver('0.3', 'active'))
 </script>
 
 <style lang="scss">

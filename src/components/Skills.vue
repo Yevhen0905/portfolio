@@ -4,8 +4,7 @@
       <div data-item class="title_small">Skills</div>
       <div class="skills_content">
         <div data-item class="description_small description_skills">
-          I am constantly improving my skills to create well-functioning
-          websites and applications
+          I am constantly improving my skills to create well-functioning websites and applications
         </div>
         <div data-item class="skills_list_wrapper">
           <div class="skills_list" v-for="skill in listSkills" :key="skill">
@@ -18,8 +17,8 @@
 </template>
 
 <script setup>
-  import {ref, onMounted} from 'vue';
-  import {initIntersectionObserver} from '../composables/observe.js';
+  import { ref, onMounted } from 'vue'
+  import { initIntersectionObserver } from '../composables/observe.js'
 
   const listSkills = ref([
     'HTML',
@@ -40,19 +39,16 @@
     'ESLint',
     'Linux',
     'Jira |Trello',
-    'Webflow'
-  ]);
+    'Webflow',
+  ])
 
-  onMounted(() => initIntersectionObserver('0.3', 'active'));
+  onMounted(() => initIntersectionObserver('0.3', 'active'))
 </script>
 
 <style lang="scss">
   .section_skills {
     background: var(--bg-light);
     transition: all 0.3s ease;
-  }
-
-  .wrapper_skills {
     padding: 60px 0;
     display: flex;
     flex-direction: column;
