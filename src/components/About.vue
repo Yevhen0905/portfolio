@@ -4,7 +4,7 @@
       <div class="home_text">
         <h1 class="title">I`m Vittsenko Evgen</h1>
         <p class="description">
-          I am a front-end developer with over 1.5 years of experience. I specialise in building
+          I am a front-end developer with almost 2 years of experience. I specialise in building
           website and web application interfaces, focusing on delivering maximum business value.
           Below, you can find my CV, which details my experience.
         </p>
