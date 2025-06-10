@@ -55,7 +55,7 @@
     position: relative;
     height: 100vh;
     background: var(--bg-color-primary);
-    min-height: 415px;
+    min-height: 560px;
     overflow: hidden;
   }
 
