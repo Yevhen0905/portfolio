@@ -197,7 +197,6 @@
   }
 
   .header.open {
-    position: relative;
     z-index: 4;
   }
 
