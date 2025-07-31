@@ -1,5 +1,5 @@
 <template>
-  <div class="header" :class="{ open: isActive }" id="header">
+  <header class="header" :class="{ open: isActive }" id="header">
     <div class="container">
       <div class="wrapper_header">
         <div class="wrapper_header_icon">
@@ -34,7 +34,7 @@
         </span>
       </button>
     </div>
-  </div>
+  </header>
   <div v-if="isActive" class="bg_open"></div>
 </template>
 
@@ -131,6 +131,22 @@
     transition: all 0.5s ease;
   }
 
+  .nav {
+    max-width: 560px;
+    width: 100%;
+    height: 100%;
+
+    @media only screen and (max-width: 920px) {
+      max-width: 380px;
+      gap: 15px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      max-width: 340px;
+      gap: 15px;
+    }
+  }
+
   .wrapper_header_icon {
     margin-right: 100px;
   }
@@ -147,6 +163,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100%;
     gap: 25px;
     transition: all 0.3s ease;
@@ -171,10 +188,7 @@
     }
 
     &_item {
-      font-size: 22px;
-      font-weight: 500;
       color: var(--color-accent);
-      transition: all 0.3s ease;
       width: 100%;
       text-align: center;
 
@@ -182,11 +196,21 @@
         font-size: 18px;
       }
 
-      &:hover {
-        color: var(--color-hover-text);
-      }
-
       &_link {
+        font-size: 22px;
+        font-weight: 600;
+        background-position: 50% 50%;
+        background-size: 0% 0%;
+        background-repeat: no-repeat;
+        transition: background-size 0.5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+        -webkit-text-stroke-width: 0.03em;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+        &:hover {
+          background-size: 180% 400%;
+        }
+
         @media only screen and (max-width: 700px) {
           display: block;
           width: 100%;
@@ -259,12 +283,36 @@
     display: none;
   }
 
-  .theme_light .switch_slider {
-    transform: translateX(0);
+  .theme_light {
+    .switch_slider {
+      transform: translateX(0);
+    }
+
+    .list_item_link {
+      background-image: radial-gradient(
+        circle farthest-corner at center center,
+        var(--color-red) 0%,
+        var(--color-red) 50%,
+        transparent 50.1%
+      );
+      -webkit-text-stroke-color: var(--color-dark-red);
+    }
   }
 
-  .theme_dark .switch_slider {
-    transform: translateX(100%);
+  .theme_dark {
+    .switch_slider {
+      transform: translateX(100%);
+    }
+
+    .list_item_link {
+      background-image: radial-gradient(
+        circle farthest-corner at center center,
+        var(--base-color) 0%,
+        var(--base-color) 50%,
+        transparent 50.1%
+      );
+      -webkit-text-stroke-color: var(--base-color);
+    }
   }
 
   .switcher_label_text {
@@ -278,6 +326,7 @@
     bottom: 0;
     right: 0;
     z-index: 3;
+    filter: brightness(0.5);
     background-color: rgb(42 41 41 / 73%);
     transition: all 0.5s ease;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer_content">
         <h3 class="footer_title">Vittsenko Evgen</h3>
@@ -9,7 +9,7 @@
         <p class="footer_years">{{ getCurrentYear() }}</p>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script setup>

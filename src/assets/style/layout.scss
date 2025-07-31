@@ -24,7 +24,7 @@
 }
 
 .red {
-  background-color: rgb(143, 26, 28);
+  background-color: var(--color-dark-red);
   color: var(--base-color);
   transition: var(--transition);
   box-shadow: -3px 1px 9px 0px rgb(55 54 54 / 69%);
