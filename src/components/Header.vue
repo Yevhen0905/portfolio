@@ -326,8 +326,8 @@
     bottom: 0;
     right: 0;
     z-index: 3;
-    filter: brightness(0.5);
-    background-color: rgb(42 41 41 / 73%);
+    backdrop-filter: blur(3px) saturate(150%);
+    background-color: #0006;
     transition: all 0.5s ease;
   }
 </style>
