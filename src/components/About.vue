@@ -14,13 +14,13 @@
       </div>
       <div class="home_btn">
         <a href="#project" class="link_btn red"> View Project </a>
-        <a href="https://yevhen0905.github.io/resume_fe/" class="link_btn red" target="_blank">
+        <a href="https://yevhen0905.github.io/cv_fd/" class="link_btn red" target="_blank">
           Open CV
         </a>
         <a
-          href="file/Resume_Frontend_dev_Vittsenko_Evgen.pdf"
+          href="file/Resume_Frontend_dev_Vittsenko_Evgen..pdf"
           class="link_btn red"
-          download="Resume_Frontend_dev_Vittsenko_Evgen.pdf"
+          download="Resume_Frontend_dev_Vittsenko_Evgen..pdf"
           type="application/pdf"
         >
           Download CV (PDF)
