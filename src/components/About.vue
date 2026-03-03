@@ -18,9 +18,9 @@
           Open CV
         </a>
         <a
-          href="file/Resume_Frontend_dev_Vittsenko_Evgen..pdf"
+          href="file/Resume_Frontend_dev_Vittsenko_Evgen...pdf"
           class="link_btn red"
-          download="Resume_Frontend_dev_Vittsenko_Evgen..pdf"
+          download="Resume_Frontend_dev_Vittsenko_Evgen...pdf"
           type="application/pdf"
         >
           Download CV (PDF)
